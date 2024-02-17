@@ -1,0 +1,26 @@
+{
+	"manifest_version": 3,
+	"name": "Open Link in Same Container New Window",
+	"description": "New right-click option for links: open in a new window in the same container as the current page (Shift+click for toolbar-less window).",
+	"version": "0.1",
+	"browser_specific_settings":{
+		"gecko": {
+			"id": "same-container-popup@jeffersonscher.com",
+			"strict_min_version": "115.0"
+		}
+	},
+	"developer": {
+		"name": "Jefferson \"jscher2000\" Scher",
+		"url": "https://github.com/jscher2000/"
+	},
+	"background": {
+		"scripts": [
+			"same-container-popup-background.js"
+		]
+	},
+	"permissions": [
+		"menus",
+		"activeTab",
+		"cookies"
+	]
+}
